@@ -126,14 +126,21 @@ li:nth-of-type(3){
     background-color: yellow;
 }
 
-button{
+.button{
+    text-align: center;
+    line-height: 60px;
+    background-color: aqua;
     position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .character {
+    z-index: 100;
     width: 151px;
     height: 291px;
-    background: url('../img/boy.png');
+    background: url('../img/boy.png') -0px -291px;
     position: absolute;
     /* 设置一个元素的坐标 */
     left: 6%;
@@ -141,9 +148,7 @@ button{
 }
 
 .slowWalk {
-
     animation: person-slow 1000ms infinite step-start;  //step-start:马上跳到动画每一结束桢的状态
-
 }
 
 /*参考http://blog.csdn.net/bingkingboy/article/details/51059209*/
@@ -164,6 +169,32 @@ button{
         background-position: -0px -291px;
     }
 }
+
+.withFlower{
+    animation: withFlower 1000ms infinite step-start;  //step-start:马上跳到动画每一结束桢的状态
+}
+
+@keyframes withFlower {
+    0% {
+        background-position: -753px -0px;
+    }
+    25% {
+        background-position: -302px -0px;
+    }
+    50% {
+        background-position: -902px -0px;
+    }
+
+    75%{
+        background-position: -451px -0px;
+    }
+    100% {
+        background-position: -751px -0px;
+    }
+}
+
+
+
 
 
 
