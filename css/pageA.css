@@ -1,0 +1,92 @@
+/*背景图*/
+
+#sun {
+    background: url("http://img.mukewang.com/55ade004000106c202010201.png") no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    height: 201px;
+    width: 201px;
+    right: 40%;
+}
+
+.cloudArea{
+    position: absolute;
+    z-index: 2;
+    top:30px;
+    right:32%;
+    height: 30%;
+    width: 40%;
+}
+.cloud{
+    background-repeat: no-repeat;
+}
+.cloud1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 110%;
+    background-image: url('../img/cloud1.png');
+}
+.cloud2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 150%;
+    background-image: url('../img/cloud2.png');
+}
+
+.rotation{
+    animation: rotation 30s;
+}
+
+.move{
+    animation: move 20s;
+}
+
+
+@keyframes move {
+    from {
+        left : 0;
+        bottom: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+
+@keyframes rotation {
+    from {transform: translate(0,0)}
+    to {transform: translate(-2000px,250px)}
+}
+
+.a_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.a_background_top{
+    width: 100%;
+    height: 71.6%;
+    background-image: url("http://img.mukewang.com/55addf6900019d8f14410645.png");
+    background-size: 100% 100%;
+}
+
+
+.a_background_middle{
+    width: 100%;
+    height: 13.1%;
+    background-image: url("http://img.mukewang.com/55addf800001ff2e14410118.png");
+    background-size: 100% 100%;
+}
+
+.a_background_bottom{
+    width: 100%;
+    height: 15.3%;
+    background-image: url("http://img.mukewang.com/55addfcb000189b314410138.png");
+    background-size: 100% 100%;
+}
+
